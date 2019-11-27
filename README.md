@@ -13,9 +13,20 @@ Build EXIF db for preprocessing operation of the PRJ2170 project
 * License: MIT
 * Date: 2019-11-12
 
-# Intallation for Exif library
+# Installation for Exif library
 After installing a copy of the ExifTool library or executable into the exiftoolr package's directory tree, where calls to functions in the exiftoolr package will automatically find it, run install_exiftool() at the console command:
 
-exiftoolr::install_exiftool()
+NOTE: 
+```{r }
+#loading like this seem not working
+library(exiftoolr)
+install_exiftool()
 
-NOTE: loading library(exiftoolr); install_exiftool() seem not working use rather the command line above which is fine.
+#use rather this command line which is fine:
+exiftoolr::install_exiftool()
+```
+
+ 
+Reference:
+https://github.com/JoshOBrien/exiftoolr
+
