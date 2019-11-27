@@ -52,7 +52,7 @@ dbWriteTable(mydb, "exif", df_fullDATA)
 dbDisconnect(mydb)
 
 # Export also the dataframe in CSV format
-write.csv(df_fullDATA, file.path(PATH_OUT, paste(sep="",fName,".csv")), qmethod = "double", row.names = F)
+write.csv(df_fullDATA, file.path(PATH_OUT, paste(sep="",fName,".csv")), row.names = F)
 
 
 
