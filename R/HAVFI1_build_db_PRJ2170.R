@@ -17,7 +17,7 @@ library(DBI)
 library(RSQLite)
 
 
-# Paramaters for data location and output in the project
+# Parameters for data location and output in the project
 PATH_PHOTO <-  "./data"
 PATH_OUT <- "./output"
 if (!dir.exists(PATH_OUT)) {
